@@ -1,0 +1,51 @@
+{
+    "name": "my-lib",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite",
+        "table": "tsc && vite build --config ./table.config.ts",
+        "material": "tsc && vite build --config ./material.config.ts && copy package.json @wave\\material",
+
+        "preview": "vite preview",
+        "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\""
+    },
+    "dependencies": {
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "styled-components": "5.3.5"
+    },
+    "devDependencies": {
+        "@babel/core": "7.17.8",
+
+        "@types/node": "17.0.23",
+        "@types/react": "17.0.43",
+        "@types/react-dom": "17.0.14",
+        "@types/styled-components": "5.1.24",
+        "@vitejs/plugin-react": "1.2.0",
+        "acorn-jsx": "5.3.2",
+        "babel-loader": "8.2.4",
+        "json": "11.0.0",
+        "storybook-builder-vite": "0.1.21",
+        "typescript": "4.6.3",
+        "vite": "2.8.6",
+        "vite-plugin-dts": "1.0.3"
+    },
+    "license": "UNLICENSED",
+    "peerDependencies": {
+        "react": "16.8.0 || 17.x",
+        "react-dom": "16.8.0 || 17.x",
+        "styled-components": "5.0.0"
+    },
+    "files": [
+        
+    ],
+    "main": "./wave.umd.js",
+    "module": "./wave.es.js",
+    "types": ".@wave/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./wave.es.js",
+            "require": "./wave.umd.js"
+        }
+    }
+}
