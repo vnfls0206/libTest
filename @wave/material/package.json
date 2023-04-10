@@ -36,13 +36,12 @@
         "react-dom": "16.8.0 || 17.x",
         "styled-components": "5.0.0"
     },
-    "files": [
-        
-    ],
     "main": "./wave.umd.js",
     "module": "./wave.es.js",
-    "types": ".@wave/index.d.ts",
-    "exports": {
+    "typesVersions": {
+        "<1": { ".": ["./@wave/table/index.d.ts"] },
+        "*": { ".": ["./@wave/material/index.d.ts"] }
+    },    "exports": {
         ".": {
             "import": "./wave.es.js",
             "require": "./wave.umd.js"

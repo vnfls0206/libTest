@@ -14,7 +14,7 @@ export default defineConfig({
         sourcemap: true,
         lib: {
             entry: path.resolve(__dirname, 'src/material/index.ts'),
-            name: 'wave-common-front/lib',
+            name: 'wave-common-front/material',
             formats: ['es', 'umd'],
             fileName: (format) => `wave.${format}.js`,
         },

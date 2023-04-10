@@ -13,10 +13,10 @@ export default defineConfig({
     build: {
         sourcemap: true,
         lib: {
-            entry: path.resolve(__dirname, 'src/lib/index.ts'),
-            name: 'MyLib',
+            entry: path.resolve(__dirname, 'src/table/index.ts'),
+            name: 'wave-common-front/table',
             formats: ['es', 'umd'],
-            fileName: (format) => `my-lib.${format}.js`,
+            fileName: (format) => `wave.${format}.js`,
         },
         outDir: path.join(__dirname, "@wave/table"),
         rollupOptions: {

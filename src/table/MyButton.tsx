@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+
 const MyButton = styled.button`
     border: none;
     border-radius: 0.5rem;
@@ -15,5 +16,5 @@ const MyButton = styled.button`
         background-color: #0a558c;
     }
 `;
-export { MyButton };
-//# sourceMappingURL=my-lib.es.js.map
+
+export default MyButton;
